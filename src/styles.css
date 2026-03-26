@@ -3,9 +3,11 @@
 }
 
 body {
-  font-family: sans-serif;
+  font-family: "Times New Roman", Times, serif;
   margin: 20px;
   padding: 0;
+  background-color: #333;
+  color: #fff;
 }
 
 h1 {
@@ -51,24 +53,29 @@ ul {
 }
 
 body {
-  font-family: sans-serif;
+  font-family: "Times New Roman", Times, serif;
   margin: 20px;
   padding: 0;
 }
 
 .square {
   background: #fff;
-  border: 1px solid #999;
+  border: 2px solid #999;
   float: left;
-  font-size: 24px;
+  font-size: 28px;
   font-weight: bold;
-  line-height: 34px;
-  height: 34px;
+  line-height: 70px;
+  height: 70px;
   margin-right: -1px;
   margin-top: -1px;
   padding: 0;
   text-align: center;
-  width: 34px;
+  width: 70px;
+  cursor: pointer;
+}
+
+.square:hover {
+  background: #ddddddc9;
 }
 
 .board-row:after {
@@ -82,9 +89,16 @@ body {
 }
 .game {
   display: flex;
-  flex-direction: row;
+  justify-content: center; 
 }
 
 .game-info {
   margin-left: 20px;
+}
+
+.game-info button {
+  font-family: "Times New Roman", Times, serif;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 6px 12px;
 }
